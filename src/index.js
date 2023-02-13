@@ -1,6 +1,6 @@
 import Rand from 'random-seed'
 
-export const randomList = ({ seed, size = 10 }) => {
+export const randomList = ({ seed = Date.now, size = 24 }) => {
   const list = []
   let currentSeed = Number(seed)
 
@@ -15,7 +15,6 @@ export const randomList = ({ seed, size = 10 }) => {
 
     list.push(integer)
   }
-
   return list
 }
 

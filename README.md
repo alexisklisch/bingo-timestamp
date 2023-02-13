@@ -19,7 +19,17 @@ npm install bingo-timestamp
 ```js
 import { randomList } from 'bingo-timestamp'
 
-const numbers = randomList({seed: Date.now(), 10})
+const numbers = randomList({seed: Date.now(), size: 24})
 
 console.log(numbers) // [6, 2, 1, 4, 9, 10, 7, 8, 3, 5]
 ```
+
+## API
+
+`randomList(options)`
+Generates an array of numbers based on a timestamp or number seed.
+
+### Options
+
+- `seed`: the seed to use for generating the numbers (default: current timestamp)
+- `size`: the size of the array to generate (default: 24)
