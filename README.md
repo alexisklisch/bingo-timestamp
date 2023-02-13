@@ -19,7 +19,7 @@ npm install bingo-timestamp
 ```js
 import { randomList } from 'bingo-timestamp'
 
-const numbers = randomList({seed: Date.now(), size: 24})
+const numbers = randomList({seed: Date.now(), size: 10})
 
 console.log(numbers) // [6, 2, 1, 4, 9, 10, 7, 8, 3, 5]
 ```
