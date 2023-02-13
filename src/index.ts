@@ -1,7 +1,7 @@
 import Rand from 'random-seed'
 
 export const randomList = ({ seed = Date.now, size = 24 }) => {
-  const list = []
+  const list: number[] = []
   let currentSeed = Number(seed)
 
   while (list.length <= size - 1) {
